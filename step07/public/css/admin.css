@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 8vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#data {
+  width: 100vw;
+}
+
+table {
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  white-space: nowrap;
+  background-color: white;
+  min-width: 100vw;
+}
+
+table tr {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+table td, table th {
+  text-align: left;
+  padding: 8px;
+  width: -moz-available;
+  word-break: break-all;
+}
+
+table td {
+  border-right: 1px solid #f8f8f8;
+}
+
+table thead th {
+  color: #ffffff;
+  background: #49306B;
+}
+
+table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+table .table-col-settings {
+  gap: 10px;
+}
+
+table .table-col-settings button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+table .button-settings {
+  margin-left: auto;
+}
+
+input {
+  padding: 0px 10px;
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+input ::placeholder {
+  color: black;
+}
+
+textarea {
+  padding: 10px 10px;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+textarea ::placeholder {
+  color: black;
+}
+
+.bloc-row {
+  flex-direction: row;
+  gap: 10px;
+}
+
+form {
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  padding: 40px;
+  background-color: white;
+  width: 50vw;
+  gap: 10px;
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 0px 0px 50px #cacaca;
+}
+
+form #intro-form-update-user {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+form #intro-form-update-user button {
+  background: none;
+  border: none;
+}
+
+form #intro-form-update-user button #close-button-user {
+  width: 20px;
+  height: 20px;
+}
+
+form input[type=submit] {
+  background-color: #49306B;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-top: 10px;
+}

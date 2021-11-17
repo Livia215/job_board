@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+main{
+  margin-top: 8vh;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}

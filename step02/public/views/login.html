@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.min.css">
+    <title>login</title>
+</head>
+<body>
+    <header class="flex">
+        <h1>Job Board</h1>
+        <ul class="flex">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </header>
+    <main class="flex">
+        <h2>Welcome! Enter your email and password</h2>
+        <form class="flex" action="">
+            <input type="text" required name="email" placeholder="email">
+            <input type="password" required name="password" placeholder="password">
+            <a href="/register">You don't have account yet? You can register here</a>
+            <a href="/forgetPsw">Lost password?</a>
+            <input type="submit" value="login">
+        </form>
+    </main>
+    <script src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+    "watch": [
+      "index.js",
+      "public/",
+      "back/"
+    ],
+    "ext": "js, css, html, handlebars",
+    "events": {
+      "restart": "kill-port 4000",
+      "crash": "kill-port 4000"
+    },
+    "env": {
+      "PORT":4000,
+      "DATABASE_HOST":"localhost",
+      "DATABASE_USERNAME":"root",
+      "DATABASE_PASSWORD":"root",
+      "DATABASE_NAME":"jobboard"
+    },
+    "delay": "1500"
+  }
+  

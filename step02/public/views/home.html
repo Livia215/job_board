@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.min.css">
+    <title>Job Board</title>
+</head>
+<body>
+    <header class="flex">
+        <h1>Job Board</h1>
+        <ul class="flex">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </header>
+    <main class="flex">
+        <section id="presentation-homepage" class="flex">
+            <h2>Welcome on job Board</h2>
+            <p>You search a new oprtunities? you are at the good place!</p>
+        </section>
+        <section id="search-homepage" class="flex">
+            <form class="flex" id="content-research">
+                <label for="keyWord">Key word</label>
+                <input type="text" placeholder="Key word" name="keyWord">
+                <label for="typeContract">Type of contract</label>
+                <select name="typeContract" id="">
+                    <option value="">Contract</option>
+                    <option value="cdi">CDI</option>
+                    <option value="cdd">CDD</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="stage">Stage</option>
+                    <option value="study">Study contract</option>
+                </select>
+                <label for="city">City</label>
+                <select name="city" id="">
+                    <option value="">city</option>
+                    <option value="Barcelone">Barcelone</option>
+                    <option value="paris">Paris</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="amsterdam">Amsterdam</option>
+                    <option value="bruxel">Bruxel</option>
+                    <option value="dublin">Dublin</option>
+                    <option value="le-mans">Le Mans</option>
+                    <option value="nancy">Nancy</option>
+                    <option value="macon">Macon</option>
+                    <option value="marseil">Marseil</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="oulan-bator">Oulan Bator</option>
+                </select>
+                <div class="flex">
+                    <div></div>
+                    <input type="submit" value="search" class="search" onclick="return false" id="search">
+                </div>
+            </form>
+        </section>
+        <section id="result-homepage" class="hidden">
+            <form id="type-contract-checkbox" class="flex">
+                <div>
+                    <input type="checkbox" id="full-time" name="full-time">
+                    <label for="full-time">Full-time</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="part-time" name="part-time">
+                    <label for="part-time">Part-time</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="apprenticeship" name="apprenticeship">
+                    <label for="apprenticeship">Apprenticeship</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="internship" name="internship">
+                    <label for="internship">Internship</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="freelance" name="freelance">
+                    <label for="freelance">Freelance</label>
+                </div>
+            </form>
+            <div class="content-result-homepage">
+                <div class="intro-advertisement flex">
+                    <div>
+                        <h2>Développeur Back Symfony H/F</h2>
+                        <h3>Santé Académie</h3>
+                    </div>
+                    <div>
+                        <div class="icon-text-result flex">
+                            <img src="https://res.cloudinary.com/dxzrvtzyt/image/upload/v1632899972/JobBoard/medal_lwpqqc.svg" alt="Badge">
+                            <p>Full-Time</p>
+                        </div>
+                        <div class="icon-text-result flex">
+                            <img src="https://res.cloudinary.com/dxzrvtzyt/image/upload/v1632899972/JobBoard/clock_ksdt22.svg" alt="Time">
+                            <p>1 day ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="informations-advertisement flex">
+                    <div class="icon-text-result flex">
+                        <img src="https://res.cloudinary.com/dxzrvtzyt/image/upload/v1632899972/JobBoard/map-locator_zwfylc.svg" alt="Place">
+                        <p>69002 Lyon</p>
+                    </div>
+                    <div class="icon-text-result flex">
+                        <img src="https://res.cloudinary.com/dxzrvtzyt/image/upload/v1632899972/JobBoard/bill_fb2a1k.svg" alt="Money">
+                        <p>60 000 per year</p>
+                    </div>
+                    <div class="icon-text-result flex">
+                        <img src="https://res.cloudinary.com/dxzrvtzyt/image/upload/v1632899972/JobBoard/tools_xnjcbx.svg" alt="Tools">
+                        <p>Health</p>
+                    </div>
+                </div>
+                <div class="short-description-advertisement">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut nihil nostrum dolore nulla, necessitatibus laboriosam dolores, numquam itaque maiores voluptates nemo doloremque recusandae sequi atque eum ad magni nesciunt.</p>
+                </div>
+                <button href="#">Learn more</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="../js/homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.min.css">
+    <link rel="stylesheet" href="../css/template.min.css">
+    <title>Job Board</title>
+</head>
+<body>
+    <header class="flex">
+    </header>
+    <main class="flex">
+        <section id="presentation-homepage" class="flex">
+            <h2>Welcome on job Board</h2>
+            <p>You search new oportunitie ? You are at the good place!</p>
+        </section>
+        <section id="search-homepage" class="flex">
+            <form class="flex" id="content-research">
+                <label for="keyWord">Key word</label>
+                <input type="text" placeholder="Key word" name="keyWord">
+                <label for="typeContract">Type of contract</label>
+                <select name="typeContract" id="">
+                    <option value="">Choose</option>
+                    <option value="cdi">CDI</option>
+                    <option value="cdd">CDD</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="stage">Stage</option>
+                    <option value="study">Study contract</option>
+                </select>
+                <label for="city">City</label>
+                <select name="city" id="">
+                    <option value="">city</option>
+                    <option value="Barcelone">Barcelone</option>
+                    <option value="paris">Paris</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="amsterdam">Amsterdam</option>
+                    <option value="bruxel">Bruxel</option>
+                    <option value="dublin">Dublin</option>
+                    <option value="le-mans">Le Mans</option>
+                    <option value="nancy">Nancy</option>
+                    <option value="macon">Macon</option>
+                    <option value="marseil">Marseil</option>
+                    <option value="sydney">Sydney</option>
+                    <option value="oulan-bator">Oulan Bator</option>
+                </select>
+                <div class="flex">
+                    <div></div>
+                    <input type="submit" value="search" class="search" onclick="return false" id="search">
+                </div>
+            </form>
+        </section>
+        <section id="result-homepage" class="hidden">
+            <h2>Jobs found</h2>
+        </section>
+        <form action="/mail" method="POST" class="form-popup hidden">
+            <div class="flex" id="intro-popup">
+                <h2>Nom de l'annonce</h2>
+                <button><img src="https://res.cloudinary.com/dxzrvtzyt/image/upload/w_20,h_20/JobBoard/close_pfnvtj.svg" id="close-button" alt="Close"></button>
+            </div>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <label for="name">Your phone</label>
+            <input type="tel" name="phone" id="phone" minlength="10" maxlength="10" placeholder="Phone" required>
+            <label for="name">Your email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="name">Your message</label>
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <input type="hidden" name="">
+            <input type="hidden" name="">
+            <input type="hidden" name="">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="../js/homepage.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
+    <script type="text/javascript" src="../js/templateAdvertisement.js"></script>
+</body>
+</html>

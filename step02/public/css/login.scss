@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+.bad-psw{
+    border: 1px solid red;
+}
+.good-psw{
+    border: 1px solid #23DC3D;
+}
+header{
+    height: 10vh;
+    justify-content: space-between;
+    padding: 0 2em;
+    align-items: center;
+    background-color: #9F9F9F;
+    ul{
+        width: 20%;
+        justify-content: space-around;
+        font-weight: bold;
+        li{
+            list-style-type: none;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    form{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}

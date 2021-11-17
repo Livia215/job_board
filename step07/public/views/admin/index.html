@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/admin.min.css" />
+    <link rel="stylesheet" href="../css/template.min.css" />
+    <title>Admin dashborad</title>
+  </head>
+  <body>
+    <header class="flex"></header>
+    <main>
+      <h2>Welcome on the admin dashboard</h2>
+      <ul>
+        <li>
+          <button id="button-users" class="button-dashborad">Users</button>
+        </li>
+        <li>
+          <button id="button-companies" class="button-dashborad">
+            Companies
+          </button>
+        </li>
+        <li>
+          <button id="button-advertisements" class="button-dashborad">
+            Advertisements
+          </button>
+        </li>
+      </ul>
+      <div id="data">
+        <table id="content-users" class="data-content flex">
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th class="table-col-settings">Settings</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <table id="content-companies" class="data-content hidden">
+          <thead>
+            <tr>
+              <th>Companie name</th>
+              <th>Address</th>
+              <th>Email</th>
+              <th class="table-col-settings">Settings</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <table id="content-advertisements" class="data-content hidden">
+          <thead>
+            <tr>
+              <th>Companie</th>
+              <th>Title</th>
+              <th>Domain</th>
+              <th>Contract</th>
+              <th>Date created</th>
+              <th class="table-col-settings">Settings</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <form action="/updateUser" method="POST" class="form-update-user hidden">
+        <div class="flex" id="intro-form-update-user">
+          <h2>Update user</h2>
+          <button>
+            <img
+              src="https://res.cloudinary.com/dxzrvtzyt/image/upload/w_20,h_20/JobBoard/close_pfnvtj.svg"
+              id="close-button-user"
+              alt="Close"
+            />
+          </button>
+        </div>
+        <div class="flex bloc-row">
+          <input
+            type="text"
+            required
+            name="first_name"
+            placeholder="First name"
+          />
+          <input
+            type="text"
+            required
+            name="last_name"
+            placeholder="Last name"
+          />
+        </div>
+        <input type="number" name="phone" placeholder="phone number" id="" />
+        <label for="Birthday">Birthday</label>
+        <input type="date" name="birthday" max="2018-12-31" required />
+        <textarea
+          name="description"
+          placeholder="decription about you"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="text" required name="email" placeholder="Email" />
+        <input type="hidden" name="">
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <script type="text/javascript" src="../js/admin.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/templateAdmin.js"></script>
+  </body>
+</html>

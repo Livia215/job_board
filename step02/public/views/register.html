@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <header class="flex">
+        <h1>Job Board</h1>
+        <ul class="flex">
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </header>
+    <main class="flex">
+        <form class="flex" action="">
+            <input type="text" required name="username" placeholder="Username">
+            <input type="text" required name="name" placeholder="Name">
+            <input type="number" name="phone" placeholder="phone number" id="">
+            <label for="Birthday">Birthday</label>
+            <input type="date" name="Birthday" max="2018-12-31" required>
+            <textarea name="desciption" placeholder="decription about you" cols="30" rows="10"></textarea>
+            <input type="text" required name="email" placeholder="Email">
+            <input type="password" required name="password" placeholder="Password" id="psw">
+            <input type="password" required name="comfirmPassword" placeholder="Comfirm password" id="confirm-Psw">
+            <div id="confirmation">
+
+            </div>
+            <input type="submit" value="register" class="button" disabled>
+        </form>
+        <script src="../js/register.js"></script>
+    </main>
+</body>
+</html>

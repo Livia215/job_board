@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.min.css">
+    <link rel="stylesheet" href="../css/template.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="flex">
+    </header>
+    <main class="flex">
+        <div class="choose-type-user flex">
+            <h2>Are you</h2>
+            <div class="flex">
+                <button class="candidate"><h3>Candidate</h3></button>
+                <button class="recruiter"><h3>Recruiter</h3></button>
+            </div>
+        </div>
+        <form id="form-login-user" class="hidden" >
+            <h2>Welcome back on jobboard ! <br> Enter your email and password</h2>
+            <input type="text" required name="email" placeholder="email">
+            <input type="password" required name="password" placeholder="password">
+            <a href="/forgetPsw" class="link">You lost your password?</a>
+            <button type="button" class="user-submit" id="submit">Submit</button>
+            <a href="/register" class="link">You don't have account yet? You can register here</a>
+        </form>
+        <form id="form-login-companie" class="hidden">
+            <h2>Companie, welcome back on jobboard !</h2>
+            <input type="text" required name="email" placeholder="email">
+            <input type="password" required name="password" placeholder="password">
+            <a href="/forgetPsw" class="link">You lost your password?</a>
+            <button type="button" class="companie-submit" id="submit-companie">Submit</button>
+            <a href="/register" class="link">You don't have account yet? You can register here</a>
+        </form>
+    </main>
+    <script src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
+</body>
+</html>

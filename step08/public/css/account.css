@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 8vh;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.bloc-row {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bloc-col {
+  flex-direction: column;
+  gap: 5px;
+}
+
+form {
+  padding: 40px;
+  background-color: white;
+  width: 35vw;
+  gap: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px #cacaca;
+}
+
+form input[type=submit] {
+  background-color: #49306B;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+form input {
+  padding: 0px 10px;
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+}
+
+form input ::placeholder {
+  color: black;
+}
+
+form textarea, form select {
+  padding: 10px 10px;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+form textarea ::placeholder, form select ::placeholder {
+  color: black;
+}
+
+.list-advertisement-user-apply, .list-advertisement-companie-posted {
+  background-color: white;
+  width: 50vw;
+}
+
+.list-advertisement-user-apply .advertisement-user-apply, .list-advertisement-companie-posted .advertisement-user-apply {
+  padding: 20px 40px;
+  box-shadow: 0px 0px 15px #cacaca;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  box-shadow: 0px 0px 15px #cacaca;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.list-advertisement-user-apply .advertisement-user-apply .intro-advertisement, .list-advertisement-companie-posted .advertisement-user-apply .intro-advertisement {
+  justify-content: space-between;
+}
+
+.list-advertisement-user-apply .advertisement-user-apply .informations-advertisement, .list-advertisement-companie-posted .advertisement-user-apply .informations-advertisement {
+  justify-content: space-around;
+}
+
+.list-advertisement-user-apply .advertisement-user-apply button, .list-advertisement-companie-posted .advertisement-user-apply button {
+  background-color: #49306B;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.list-advertisement-user-apply .advertisement-user-apply .long-description-advertisement, .list-advertisement-companie-posted .advertisement-user-apply .long-description-advertisement {
+  flex-direction: column;
+}
+
+.list-advertisement-user-apply .advertisement-user-apply .long-description-advertisement .intro-description-advertisement, .list-advertisement-companie-posted .advertisement-user-apply .long-description-advertisement .intro-description-advertisement {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-text-result {
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+}
+
+.icon-text-result img {
+  width: 20px;
+  height: auto;
+}
+
+.form-update-advertisement {
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  padding: 40px;
+  background-color: white;
+  width: 70vw;
+  gap: 10px;
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 0px 0px 50px #cacaca;
+}
+
+.form-update-advertisement div {
+  flex-direction: column;
+}
+
+.form-update-advertisement #intro-popup {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-update-advertisement #intro-popup button {
+  background: none;
+  border: none;
+}
+
+.form-update-advertisement #intro-popup button #close-button {
+  width: 20px;
+  height: 20px;
+}
+
+.form-update-advertisement input[type=submit] {
+  background-color: #49306B;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 90px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.form-update-advertisement button {
+  background: none;
+  border: none;
+}
+
+.form-update-advertisement button #close-button-advertisement {
+  width: 20px;
+  height: 20px;
+}
+
+.form-update-advertisement #intro-form-update-advertisement {
+  justify-content: space-between;
+}
+
+.update-advertisement-companie button {
+  background-color: white !important;
+  border: 2px solid #49306B !important;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    gap: 40px;
+  }
+  main form, main .list-advertisement-user-apply, main .list-advertisement-companie-posted {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    flex-direction: column;
+    gap: 40px;
+  }
+  main form, main .list-advertisement-user-apply, main .list-advertisement-companie-posted {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  main .intro-advertisement, main .informations-advertisement {
+    flex-direction: column;
+  }
+}

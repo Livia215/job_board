@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/template.min.css" />
+  <link rel="stylesheet" href="../css/login.min.css">
+  <title>Advertisement</title>
+</head>
+<body>
+  <header class="flex"></header>
+  <main>
+    <form id="form-create-new-advertisement" class="flex">
+      <label for="title">Tite of the advertisement</label>
+      <input type="text" name="title" placeholder="Title" required>
+      <label for="short_desc">Short description of the advertisement</label>
+      <textarea name="short_desc" id="short_desc" cols="30" rows="10" placeholder="Short description of the job" required></textarea>
+      <label for="long_desc">Long description of the advertisement</label>
+      <textarea name="long_desc" id="long_desc" cols="30" rows="10" placeholder="Long description of the job" required></textarea>
+      <label for="contract">Type of contract</label>
+      <select name="contract" id="contract" required>
+        <option value="full-time">Full-Time</option>
+        <option value="part-time">Part-Time</option>
+        <option value="apprenticeship">Apprenticeship</option>
+        <option value="internship">Internship</option>
+        <option value="freelance">Freelance</option>
+      </select>
+      <label for="wage">Wage</label>
+      <input type="number" name="wage">
+      <label for="city">City</label>
+      <input type="text" name="city">
+      <label for="domain">Domain</label>
+      <select name="domain" required>
+        <option value="accountancy">Accountacy</option>
+        <option value="actuarial">Actuarial</option>
+        <option value="admin">Admin, secretarial & PA</option>
+        <option value="banking">Banking</option>
+        <option value="consultancy">Consultancy</option>
+        <option value="customer_service">Customer Service</option>
+        <option value="education_teaching">Education & Teaching</option>
+        <option value="engineering">Engineering</option>
+        <option value="fmcg">FMCG</option>
+        <option value="graduate">Graduate</option>
+        <option value="marketing">Marketing & PR</option>
+        <option value="media">Media, digital & creative</option>
+        <option value="sales">Sales</option>
+        <option value="software">Software engineering</option>
+        <option value="strategy">Strategy</option>
+        <option value="tourism">Tourism</option>
+      </select>
+      <label for="date_start">Date start</label>
+      <input type="date" name="date_start" min="2018-12-31" required>
+      <label for="date_end" class="date-end-content hidden">Date end</label>
+      <input type="date" name="date_end" min="2018-12-31" id="date_end" class="date-end-content hidden">
+      <input type="submit" value="register" class="button submit">
+    </form>
+  </main>
+  <script type="text/javascript" src="../js/advertisement.js"></script>
+  <script type="text/javascript" src="../js/template.js"></script>
+</body>
+</html>

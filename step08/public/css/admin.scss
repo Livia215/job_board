@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+main{
+  margin-top: 8vh;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+#data{
+  width: 100vw;
+}
+
+table{
+  flex-direction: column;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  white-space: nowrap;
+  background-color: white;
+  min-width: 100vw;
+  tr{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  td, th{
+    text-align: left;
+    padding: 8px;
+    width: -moz-available;
+    word-break: break-all;
+  }
+  td {
+    border-right: 1px solid #f8f8f8;
+  }
+  thead th{
+    color: #ffffff;
+    background: #49306B;
+  }
+  tr:nth-child(even){
+    background: #F8F8F8;
+  }
+  .table-col-settings{
+    gap: 10px;
+    button{
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+  .button-settings{
+    margin-left: auto;
+  }
+}
+
+input{
+  padding: 0px 10px;
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  ::placeholder{
+      color: black;
+  }
+}
+
+textarea, select{
+  padding: 10px 10px;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  ::placeholder{
+      color: black;
+  }
+}
+
+.bloc-row{
+  flex-direction: row;
+  gap: 10px;
+}
+
+form {
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  bottom: 40px;
+  padding: 40px;
+  background-color: white;
+  width: 50vw;
+  gap: 10px;
+  border-radius: 15px 0px 0px 15px;
+  box-shadow: 0px 0px 50px #cacaca;
+  #intro-form-update-user, #intro-form-update-companie{
+      flex-direction: row;
+      justify-content: space-between;
+      button{
+          background: none;
+          border: none;
+          #close-button-user, #close-button-companie{
+              width: 20px;
+              height: 20px
+          }
+      }        
+  }
+  input[type=submit]{
+      background-color: #49306B;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 90px;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-left: auto;
+      margin-top: 10px;
+  }
+}
+
+.content-form-update-user {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

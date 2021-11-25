@@ -1,0 +1,148 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    padding-top: 8vh;
+}
+.flex{
+    display: flex;
+}
+.bad-psw{
+    color: red;
+}
+.good-psw{
+    color: #23DC3D;
+}
+
+.bad-psw, .good-psw{
+    margin-right: auto;
+    font-size: 12px;
+}
+
+textarea, select{
+    padding: 10px 10px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    ::placeholder{
+        color: black;
+    }
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 92vh;
+    h2{
+        text-align: center;
+    }
+}
+
+form{
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #cacaca;
+    padding: 20px;
+    width: auto;
+    .link{
+        text-decoration: underline;
+        font-size: 12px;
+    }
+}
+
+#form-create-new-advertisement{
+    width: 50vw;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    label{
+        margin-right: auto;
+    }
+}
+
+input{
+    padding: 0px 10px;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    ::placeholder{
+        color: black;
+    }
+}
+
+#submit{
+    background-color: #49306B;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type=submit]{
+    background-color: #49306B;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 90px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bloc-row{
+    flex-direction: row;
+    gap: 10px;
+}
+
+.choose-type-user{
+    flex-direction: column;
+    div{
+        gap: 10px;
+        button{
+            background-color: #49306B;
+            color: white;
+            padding: 0px 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            
+        }
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1024px){
+    #form-create-new-advertisement{
+        width: 75vw;
+    }
+    .form-update-advertisement{
+        width: 75vw;
+    }
+}
+
+@media (max-width : 767px){
+    main{
+        min-height: 80vh;
+        height: auto;
+        padding: 100px 0px 40px 0px;
+        form{
+            width: 80%;
+        }
+    }
+    #form-create-new-advertisement{
+        width: 80%;
+    }
+    .form-update-advertisement{
+        width: 80vw;
+    }
+}

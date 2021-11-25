@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/account.min.css" />
+  <link rel="stylesheet" href="../css/template.min.css" />
+  <title>User dashboard</title>
+</head>
+<body>
+  <header class="flex"></header>
+    <main class="flex">
+      <form id="form-content-user-account">
+        <h2>Update your informations</h2>
+        <div class="form-profile-companie-account flex bloc-col"></div>
+        <input type="submit" value="Update" class="update-account-companie" />
+      </form>
+      <div class="list-advertisement-companie-posted">
+        <h3>Advertisements you have posted</h3>
+      </div>
+      <form class="form-update-advertisement hidden">
+        <div class="flex" id="intro-form-update-advertisement">
+          <h2>Update user</h2>
+          <button>
+            <img
+              src="https://res.cloudinary.com/dxzrvtzyt/image/upload/w_20,h_20/JobBoard/close_pfnvtj.svg"
+              id="close-button-advertisement"
+              alt="Close"
+            />
+          </button>
+        </div>
+        <div class="content-form-update-advertisement flex"></div>
+        <input type="submit" value="Submit" class="update-submit-companie" />
+      </form>
+    </main>
+    <script type="text/javascript" src="../js/companieAccount.js">
+    </script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../js/logout.js"></script>
+</body>
+</html>

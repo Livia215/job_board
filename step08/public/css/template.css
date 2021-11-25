@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+header {
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 0 2em;
+  align-items: center;
+  background-color: #49306b;
+  color: white;
+  z-index: 100;
+}
+
+header ul {
+  gap: 16px;
+  font-weight: bold;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li:hover {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
